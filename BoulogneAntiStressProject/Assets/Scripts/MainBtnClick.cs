@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class MainBtnClick : MonoBehaviour
 {
-
+    /*
     public GameObject textBox;
 
     public void ClickBtn()
     {
         GlobalCookies.CookieCount += 1;
     }
+    */
 
 }

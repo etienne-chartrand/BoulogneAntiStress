@@ -5,14 +5,15 @@ using UnityEngine.UI;
 
 public class GlobalCookies : MonoBehaviour
 {
-
+    
     public static int CookieCount;
     public GameObject CookieDisplay;
     public int InternalCookie;
-
+    /*
     void Update()
     {
         InternalCookie = CookieCount;
-        CookieDisplay.GetComponent<Text>().text = "Cookie: " + InternalCookie;
+        CookieDisplay.GetComponent<Text>().text = "Timer: " + InternalCookie;
     }
+    */
 }
