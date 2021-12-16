@@ -1328,6 +1328,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1475948874}
   - component: {fileID: 1475948875}
+  - component: {fileID: 1475948876}
   m_Layer: 0
   m_Name: DisplaySquareProto (1)
   m_TagString: Untagged
@@ -1400,6 +1401,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1475948876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1475948873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5fee8af16e514d46a24b50c8a36d817, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cube: {fileID: 1475948873}
 --- !u!1 &1493655898
 GameObject:
   m_ObjectHideFlags: 0
@@ -1442,6 +1456,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1542279512}
   - component: {fileID: 1542279513}
+  - component: {fileID: 1542279514}
   m_Layer: 0
   m_Name: DisplaySquareProto (2)
   m_TagString: Untagged
@@ -1514,6 +1529,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1542279514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1542279511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5fee8af16e514d46a24b50c8a36d817, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cube: {fileID: 1542279511}
 --- !u!1 &1598110851
 GameObject:
   m_ObjectHideFlags: 0
@@ -1603,6 +1631,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1624636875}
   - component: {fileID: 1624636876}
+  - component: {fileID: 1624636877}
   m_Layer: 5
   m_Name: DisplaySquareProto
   m_TagString: Untagged
@@ -1675,6 +1704,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1624636877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624636874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5fee8af16e514d46a24b50c8a36d817, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cube: {fileID: 1624636874}
 --- !u!1 &1644162805
 GameObject:
   m_ObjectHideFlags: 0
