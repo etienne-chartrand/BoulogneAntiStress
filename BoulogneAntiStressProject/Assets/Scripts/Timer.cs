@@ -8,12 +8,23 @@ public class Timer : MonoBehaviour
 {
 
     public float timer = 1200;
+    private float maxtimer;
+    private float minTimer;
+    private float middleTimer;
+
     public Text countDownText;
     public InputField timerSettings;
-    
+
+    public GameObject firstCube;
+    public GameObject secondCube;
+    public GameObject thirdCube;
+
     private void Start()
     {
         GetTimer();
+
+        maxtimer = timer;
+        middleTimer = maxtimer / 2;
     }
 
 
@@ -33,12 +44,20 @@ public class Timer : MonoBehaviour
         {
             timer = 0;
         }
-        
-    }
 
-    void PrintDate()
-    {
-        Debug.Log("Date : " + System.DateTime.Now.ToString());
+        if ((timer/2)* 1.5 <= middleTimer )
+        {
+            firstCube.SetActive(false);
+        }
+        if(timer <= middleTimer)
+        {
+            secondCube.SetActive(false);
+        }
+        if(timer <= minTimer)
+        {
+            thirdCube.SetActive(false);
+        }
+
     }
 
     public void GetTimer()
@@ -46,5 +65,6 @@ public class Timer : MonoBehaviour
         float t = float.Parse(timerSettings.text);
         print(timerSettings.text);
         timer = t;
+
     }
 }
