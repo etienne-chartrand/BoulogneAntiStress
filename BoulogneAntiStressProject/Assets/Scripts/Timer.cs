@@ -39,8 +39,8 @@ public class Timer : MonoBehaviour
             var timeSpan = System.TimeSpan.FromSeconds(timer);
             countDownText.text = timeSpan.Hours.ToString("00") + ":" +
                             timeSpan.Minutes.ToString("00") + ":" +
-                            timeSpan.Seconds.ToString("00") + "." +
-                            timeSpan.Milliseconds / 100;
+                            timeSpan.Seconds.ToString("00");
+                            //timeSpan.Milliseconds / 100;
         }
         else if (isPaused == false && timer <= 0)
         {
