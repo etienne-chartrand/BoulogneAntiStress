@@ -5,14 +5,11 @@ using UnityEngine;
 public class FadeOutThird : MonoBehaviour
 {
     private float fadeSpeed = 1;
-    public static bool firstIsOut = false;
-    public static bool secondIsOut = false;
-    public static bool thirdIsOut = false;
-
     public GameObject cube;
 
     private void Update()
     {   
+        //FadeOut lorsque le timer est fini
         if (Timer.timer <= Timer.minTimer)
         {
             Color objectColor = cube.GetComponent<Renderer>().material.color;

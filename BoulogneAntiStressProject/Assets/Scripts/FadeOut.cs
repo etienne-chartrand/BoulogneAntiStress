@@ -9,6 +9,7 @@ public class FadeOut : MonoBehaviour
 
     private void Update()
     {
+        //FadeOut lorsque le timer est a 75%
         if ((Timer.timer / 2) * 1.5 <= Timer.middleTimer)
         {
             Color objectColor = cube.GetComponent<Renderer>().material.color;

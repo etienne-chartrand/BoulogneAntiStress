@@ -7,9 +7,7 @@ using UnityEngine.UI;
 public class Timer : MonoBehaviour
 {
     private bool isPaused = false;
-    private Material material;
-    private float fadeSpeed = 2;
-
+    
     public static float timer = 1200;
     public static float maxtimer;
     public static float minTimer;
@@ -17,10 +15,6 @@ public class Timer : MonoBehaviour
 
     public Text countDownText;
     public InputField timerSettings;
-
-    public GameObject firstCube;
-    public GameObject secondCube;
-    public GameObject thirdCube;
 
     private void Start()
     {
@@ -32,7 +26,7 @@ public class Timer : MonoBehaviour
 
     void Update()
     {
-
+        //update le timer
         if(timer > 0 && isPaused == false)
         {
             timer = Mathf.Max(0, timer - Time.deltaTime);
@@ -48,17 +42,21 @@ public class Timer : MonoBehaviour
         }
     }
 
+
+    //check ce que l'utilisateur a entrer comme timer
     public void GetTimer()
     {
         float t = float.Parse(timerSettings.text);
         timer = t;
     }
 
+    //arrete le timer
     public void PauseTimer()
     {
         isPaused = true;
     }
 
+    //resume le timer
     public void ResumeTimer()
     {
         isPaused = false;

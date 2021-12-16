@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class PurchaseLog : MonoBehaviour
 {
-    public GameObject AutoCookie;
+    public GameObject Timerstart;
     
+    //active le timer GameObject
     public void StartAutoCookie()
     {
-        AutoCookie.SetActive(true);
+        Timerstart.SetActive(true);
     }
 }
