@@ -958,6 +958,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1087001926}
   - component: {fileID: 1087001927}
+  - component: {fileID: 1087001928}
   m_Layer: 0
   m_Name: DisplaySquareProto (5)
   m_TagString: Untagged
@@ -1030,6 +1031,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1087001928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1087001925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41c39378c6d29df46b328e84956c0748, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cube: {fileID: 1087001925}
 --- !u!1 &1296245269
 GameObject:
   m_ObjectHideFlags: 0
@@ -1410,7 +1424,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1475948873}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5fee8af16e514d46a24b50c8a36d817, type: 3}
+  m_Script: {fileID: 11500000, guid: 4ef3feb6bd919894e9414b00b271eda7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cube: {fileID: 1475948873}
@@ -1538,7 +1552,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1542279511}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5fee8af16e514d46a24b50c8a36d817, type: 3}
+  m_Script: {fileID: 11500000, guid: 4ef3feb6bd919894e9414b00b271eda7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cube: {fileID: 1542279511}
@@ -1727,6 +1741,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1644162806}
   - component: {fileID: 1644162807}
+  - component: {fileID: 1644162808}
   m_Layer: 0
   m_Name: DisplaySquareProto (3)
   m_TagString: Untagged
@@ -1799,6 +1814,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1644162808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644162805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41c39378c6d29df46b328e84956c0748, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cube: {fileID: 1644162805}
 --- !u!1 &1669866421
 GameObject:
   m_ObjectHideFlags: 0
@@ -2181,6 +2209,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2115698956}
   - component: {fileID: 2115698957}
+  - component: {fileID: 2115698958}
   m_Layer: 0
   m_Name: DisplaySquareProto (4)
   m_TagString: Untagged
@@ -2253,6 +2282,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2115698958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2115698955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41c39378c6d29df46b328e84956c0748, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cube: {fileID: 2115698955}
 --- !u!1 &2138514120
 GameObject:
   m_ObjectHideFlags: 0
