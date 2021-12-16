@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
+    private bool isPaused = false;
+
 
     private float timer = 1200;
     private float maxtimer;
@@ -30,7 +32,7 @@ public class Timer : MonoBehaviour
     void Update()
     {
 
-        if(timer > 0)
+        if(timer > 0 && isPaused == false)
         {
             timer = Mathf.Max(0, timer - Time.deltaTime);
             var timeSpan = System.TimeSpan.FromSeconds(timer);
@@ -39,7 +41,7 @@ public class Timer : MonoBehaviour
                             timeSpan.Seconds.ToString("00") + "." +
                             timeSpan.Milliseconds / 100;
         }
-        else
+        else if (isPaused == false && timer <= 0)
         {
             timer = 0;
         }
@@ -62,5 +64,15 @@ public class Timer : MonoBehaviour
     {
         float t = float.Parse(timerSettings.text);
         timer = t;
+    }
+
+    public void PauseTimer()
+    {
+        isPaused = true;
+    }
+
+    public void ResumeTimer()
+    {
+        isPaused = false;
     }
 }
