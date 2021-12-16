@@ -147,7 +147,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 56031357}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.9, y: 0.15, z: 0}
+  m_LocalPosition: {x: 0.9, y: -0.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1644162806}
@@ -199,7 +199,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b537a9f9214cff4db08ea5907e6cc9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 7200
   countDownText: {fileID: 2015516751}
   timerSettings: {fileID: 1342746010}
   firstCube: {fileID: 2138514120}
@@ -1032,7 +1031,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1493655898}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.31717426, y: 1.3031977, z: -5910.6694}
+  m_LocalPosition: {x: -0.31717426, y: 0.90319777, z: -5910.6694}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1475948874}
@@ -1764,7 +1763,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2138514120}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.31717426, y: 1.3031977, z: -5910.6694}
+  m_LocalPosition: {x: -0.31717426, y: 0.90319777, z: -5910.6694}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1624636875}
