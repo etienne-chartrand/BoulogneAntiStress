@@ -10,6 +10,4 @@ public class PurchaseLog : MonoBehaviour
     {
         AutoCookie.SetActive(true);
     }
-
-
 }

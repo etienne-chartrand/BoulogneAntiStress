@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class Timer : MonoBehaviour
 {
 
-    public float timer = 1200;
+    private float timer = 1200;
     private float maxtimer;
     private float minTimer;
     private float middleTimer;
@@ -26,7 +26,6 @@ public class Timer : MonoBehaviour
         maxtimer = timer;
         middleTimer = maxtimer / 2;
     }
-
 
     void Update()
     {
@@ -57,14 +56,11 @@ public class Timer : MonoBehaviour
         {
             thirdCube.SetActive(false);
         }
-
     }
 
     public void GetTimer()
     {
         float t = float.Parse(timerSettings.text);
-        print(timerSettings.text);
         timer = t;
-
     }
 }
