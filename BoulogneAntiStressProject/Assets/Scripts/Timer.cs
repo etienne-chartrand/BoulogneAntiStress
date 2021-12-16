@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class Timer : MonoBehaviour
 {
     private bool isPaused = false;
+    public static bool isInGame = false;
     
     public static float timer = 1200;
     public static float maxtimer;
@@ -16,19 +17,24 @@ public class Timer : MonoBehaviour
     public Text countDownText;
     public InputField timerSettings;
 
+    public GameObject mainMenuScene;
+    public GameObject inGameScene;
+
     private void Start()
     {
         GetTimer();
-
+        
         maxtimer = timer;
         middleTimer = maxtimer / 2;
     }
 
     void Update()
     {
+        
         //update le timer
         if(timer > 0 && isPaused == false)
         {
+            isInGame = true;
             timer = Mathf.Max(0, timer - Time.deltaTime);
             var timeSpan = System.TimeSpan.FromSeconds(timer);
             countDownText.text = timeSpan.Hours.ToString("00") + ":" +
@@ -38,7 +44,11 @@ public class Timer : MonoBehaviour
         }
         else if (isPaused == false && timer <= 0)
         {
+            isInGame = false;
             timer = 0;
+            mainMenuScene.SetActive(true);
+            inGameScene.SetActive(false);
+            
         }
     }
 

@@ -17,5 +17,13 @@ public class FadeOutThird : MonoBehaviour
             objectColor = new Color(objectColor.r, objectColor.g, objectColor.b, fadeAmount);
             cube.GetComponent<Renderer>().material.color = objectColor;
         }
+
+        if (Timer.isInGame == false)
+        {
+            Color objectColor = cube.GetComponent<Renderer>().material.color;
+            float fadeAmount = objectColor.a + (fadeSpeed / Time.deltaTime);
+            objectColor = new Color(objectColor.r, objectColor.g, objectColor.b, fadeAmount);
+            cube.GetComponent<Renderer>().material.color = objectColor;
+        }
     }
 }

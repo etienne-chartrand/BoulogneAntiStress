@@ -334,6 +334,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   countDownText: {fileID: 2015516751}
   timerSettings: {fileID: 810977890}
+  mainMenuScene: {fileID: 953818454}
+  inGameScene: {fileID: 1385622364}
 --- !u!1 &340962206
 GameObject:
   m_ObjectHideFlags: 0

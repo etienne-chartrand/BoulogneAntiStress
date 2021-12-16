@@ -7,6 +7,8 @@ public class PurchaseLog : MonoBehaviour
     public GameObject Timerstart;
     public GameObject inGameScene;
     public GameObject mainMenuScene;
+
+
     
     //active le timer GameObject
     public void StartAutoCookie()
