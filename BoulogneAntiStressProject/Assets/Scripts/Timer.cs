@@ -24,8 +24,7 @@ public class Timer : MonoBehaviour
 
     private void Start()
     {
-        GetTimer();
-        
+        GetTimer();   
         maxtimer = timer;
         middleTimer = maxtimer / 2;
     }
@@ -60,7 +59,7 @@ public class Timer : MonoBehaviour
     public void GetTimer()
     {
         float t = float.Parse(timerSettings.text);
-        timer = t;
+        timer = t * 60;
     }
 
     //arrete le timer

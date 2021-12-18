@@ -16,7 +16,6 @@ public class PurchaseLog : MonoBehaviour
     {
         Timerstart.SetActive(true);
         inGameScene.SetActive(true);
-        
         mainMenuScene.SetActive(false);
     }
 }
