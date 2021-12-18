@@ -7,7 +7,7 @@ public class PurchaseLog : MonoBehaviour
     public GameObject Timerstart;
     public GameObject inGameScene;
     public GameObject mainMenuScene;
-    public GameObject assetsInGame;
+    
 
 
     
@@ -16,7 +16,7 @@ public class PurchaseLog : MonoBehaviour
     {
         Timerstart.SetActive(true);
         inGameScene.SetActive(true);
-        assetsInGame.SetActive(true);
+        
         mainMenuScene.SetActive(false);
     }
 }

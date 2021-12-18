@@ -8,7 +8,6 @@ public class Timer : MonoBehaviour
 {
     private bool isPaused = false;
     public static bool isInGame = false;
-    public static bool isResetting = false;
     
     public static float timer = 1200;
     public static float maxtimer;
@@ -21,7 +20,7 @@ public class Timer : MonoBehaviour
     public GameObject mainMenuScene;
     public GameObject inGameScene;
     public GameObject bibliothequeScene;
-    public GameObject assetsInGame;
+    
 
     private void Start()
     {
@@ -79,7 +78,6 @@ public class Timer : MonoBehaviour
 
     public void RestartApp()
     {
-        isResetting = true;
         timer = 10000;
         mainMenuScene.SetActive(true);
         inGameScene.SetActive(false);
