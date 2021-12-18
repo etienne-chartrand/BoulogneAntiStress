@@ -10,18 +10,10 @@ public class FadeOutThird : MonoBehaviour
     private void Update()
     {   
         //FadeOut lorsque le timer est fini
-        if (Timer.timer <= Timer.minTimer)
+        if (Timer.timer <= Timer.minTimer + 2)
         {
             Color objectColor = cube.GetComponent<Renderer>().material.color;
             float fadeAmount = objectColor.a - (fadeSpeed * Time.deltaTime);
-            objectColor = new Color(objectColor.r, objectColor.g, objectColor.b, fadeAmount);
-            cube.GetComponent<Renderer>().material.color = objectColor;
-        }
-
-        if (Timer.isInGame == false)
-        {
-            Color objectColor = cube.GetComponent<Renderer>().material.color;
-            float fadeAmount = objectColor.a + (fadeSpeed / Time.deltaTime);
             objectColor = new Color(objectColor.r, objectColor.g, objectColor.b, fadeAmount);
             cube.GetComponent<Renderer>().material.color = objectColor;
         }

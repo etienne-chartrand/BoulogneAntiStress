@@ -8,6 +8,7 @@ public class Timer : MonoBehaviour
 {
     private bool isPaused = false;
     public static bool isInGame = false;
+    public static bool isResetting = false;
     
     public static float timer = 1200;
     public static float maxtimer;
@@ -19,6 +20,8 @@ public class Timer : MonoBehaviour
 
     public GameObject mainMenuScene;
     public GameObject inGameScene;
+    public GameObject bibliothequeScene;
+    public GameObject assetsInGame;
 
     private void Start()
     {
@@ -34,6 +37,7 @@ public class Timer : MonoBehaviour
         //update le timer
         if(timer > 0 && isPaused == false)
         {
+            
             isInGame = true;
             timer = Mathf.Max(0, timer - Time.deltaTime);
             var timeSpan = System.TimeSpan.FromSeconds(timer);
@@ -46,9 +50,9 @@ public class Timer : MonoBehaviour
         {
             isInGame = false;
             timer = 0;
-            mainMenuScene.SetActive(true);
+            mainMenuScene.SetActive(false);
             inGameScene.SetActive(false);
-            
+            bibliothequeScene.SetActive(true);
         }
     }
 
@@ -70,5 +74,15 @@ public class Timer : MonoBehaviour
     public void ResumeTimer()
     {
         isPaused = false;
+    }
+
+
+    public void RestartApp()
+    {
+        isResetting = true;
+        timer = 10000;
+        mainMenuScene.SetActive(true);
+        inGameScene.SetActive(false);
+        bibliothequeScene.SetActive(false);
     }
 }
