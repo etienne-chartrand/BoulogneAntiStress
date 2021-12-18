@@ -20,6 +20,7 @@ public class Timer : MonoBehaviour
     public GameObject mainMenuScene;
     public GameObject inGameScene;
     public GameObject bibliothequeScene;
+    public GameObject insideCoursScene;
     
 
     private void Start()
