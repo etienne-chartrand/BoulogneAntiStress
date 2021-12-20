@@ -8,6 +8,7 @@ public class Timer : MonoBehaviour
 {
     private bool isPaused = false;
     public static bool isInGame = false;
+    private bool isInCourse = false;
     
     public static float timer = 1200;
     public static float maxtimer;
@@ -45,7 +46,7 @@ public class Timer : MonoBehaviour
                             timeSpan.Seconds.ToString("00");
                             //timeSpan.Milliseconds / 100;
         }
-        else if (isPaused == false && timer <= 0)
+        else if (isPaused == false && timer <= 0 && isInCourse == false)
         {
             isInGame = false;
             timer = 0;
@@ -82,5 +83,20 @@ public class Timer : MonoBehaviour
         mainMenuScene.SetActive(true);
         inGameScene.SetActive(false);
         bibliothequeScene.SetActive(false);
+        insideCoursScene.SetActive(false);
+    }
+
+    public void OnClickCourses()
+    {
+        isInCourse = true;
+        insideCoursScene.SetActive(true);
+        bibliothequeScene.SetActive(false);
+    }
+    
+    public void BibliothequeBtn()
+    {
+        isInCourse = false;
+        bibliothequeScene.SetActive(true);
+        insideCoursScene.SetActive(false);
     }
 }
