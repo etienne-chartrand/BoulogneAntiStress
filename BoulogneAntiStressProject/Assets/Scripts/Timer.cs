@@ -22,7 +22,10 @@ public class Timer : MonoBehaviour
     public GameObject inGameScene;
     public GameObject bibliothequeScene;
     public GameObject insideCoursScene;
-    
+    public GameObject coursDetails;
+
+    public GameObject PauseBtn;
+    public GameObject ResumeBtn;
 
     private void Start()
     {
@@ -44,10 +47,13 @@ public class Timer : MonoBehaviour
             countDownText.text = timeSpan.Hours.ToString("00") + ":" +
                             timeSpan.Minutes.ToString("00") + ":" +
                             timeSpan.Seconds.ToString("00");
-                            //timeSpan.Milliseconds / 100;
+            //timeSpan.Milliseconds / 100;
+
+            
         }
         else if (isPaused == false && timer <= 0 && isInCourse == false)
         {
+            
             isInGame = false;
             timer = 0;
             mainMenuScene.SetActive(false);
@@ -68,22 +74,29 @@ public class Timer : MonoBehaviour
     public void PauseTimer()
     {
         isPaused = true;
+        ResumeBtn.SetActive(true);
+        PauseBtn.SetActive(false);
     }
 
     //resume le timer
     public void ResumeTimer()
     {
         isPaused = false;
+        PauseBtn.SetActive(true);
+        ResumeBtn.SetActive(false);
     }
 
 
     public void RestartApp()
     {
+        isInCourse = false;
         timer = 10000;
         mainMenuScene.SetActive(true);
         inGameScene.SetActive(false);
         bibliothequeScene.SetActive(false);
         insideCoursScene.SetActive(false);
+        coursDetails.SetActive(false);
+        
     }
 
     public void OnClickCourses()
@@ -91,12 +104,28 @@ public class Timer : MonoBehaviour
         isInCourse = true;
         insideCoursScene.SetActive(true);
         bibliothequeScene.SetActive(false);
+        coursDetails.SetActive(false);
+        
     }
     
     public void BibliothequeBtn()
     {
+
         isInCourse = false;
         bibliothequeScene.SetActive(true);
         insideCoursScene.SetActive(false);
+        mainMenuScene.SetActive(false);
+        coursDetails.SetActive(false);
+        
+        
+    }
+
+    public void OpenDetails()
+    {
+        isInCourse = true;
+        coursDetails.SetActive(true);
+        insideCoursScene.SetActive(false);
+        
+        
     }
 }
