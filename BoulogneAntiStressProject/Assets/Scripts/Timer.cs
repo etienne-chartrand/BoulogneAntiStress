@@ -26,6 +26,7 @@ public class Timer : MonoBehaviour
 
     public GameObject PauseBtn;
     public GameObject ResumeBtn;
+    public GameObject Student;
 
     private void Start()
     {
@@ -76,6 +77,7 @@ public class Timer : MonoBehaviour
         isPaused = true;
         ResumeBtn.SetActive(true);
         PauseBtn.SetActive(false);
+        //Student.SetActive(false);
     }
 
     //resume le timer
@@ -84,6 +86,7 @@ public class Timer : MonoBehaviour
         isPaused = false;
         PauseBtn.SetActive(true);
         ResumeBtn.SetActive(false);
+        //Student.SetActive(true);
     }
 
 
